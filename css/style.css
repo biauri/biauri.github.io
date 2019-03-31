@@ -1,0 +1,135 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto|Roboto+Slab');
+/* 
+font-family: 'Pacifico', cursive; - Header
+font-family: 'Roboto Slab', serif; - Headers secundários
+font-family: 'Roboto', sans-serif; - Conteúdo
+*/
+
+/* 
+Colors:
+
+- #333
+- #f94
+*/
+
+/* Tags */
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #333;
+}
+body {
+    width: 40%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+h1 {
+    margin: .8em;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #f94;
+}
+h2 {
+    margin: .5em;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+}
+span {
+    text-transform: uppercase;
+}
+a {
+    color: #f94;
+}
+footer {
+    margin-top: 3em;
+}
+
+/* Classes */
+
+/* O game */
+.game {
+    height: 310px;
+    width: 410px;
+    margin: .5em auto;
+    padding: .8em;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+.guessField {
+    height: 2em;
+    width: 300px;
+    margin: .5em auto;
+    padding: 0 .5em;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #333;
+}
+.guessField:focus {
+    outline: none;
+    border-color: #f94;
+}
+.guessSubmit, button {
+    height: 2em;
+    width: 130px;
+    margin: .5em auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #f94;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #333;
+}
+.guessSubmit:active, button:active {
+    outline: none;
+}
+.resultParas {
+    margin-top: 1em;
+}
+.guesses, .lastResult, .lowOrHi {
+    margin: .8em 0;
+}
+
+/* Instruções */
+.instructions-item {
+    overflow: auto;
+    height: 100px;
+    width: 410px;
+    margin: .5em auto;
+    padding: .8em;
+    border: none;
+    border-radius: 10px;
+    background-color: #f94;
+}
+.instructions-para-right {
+    width: 250px;
+    display: inline;
+    float: right;
+    text-align: justify;
+    margin: 34.64px 0;
+}
+.instructions-para-left {
+    width: 250px;
+    display: inline;
+    float: left;
+    text-align: justify;
+    margin: 34.64px 0;
+}
+.img-right {
+    float: right;
+}
+.img-left {
+    float: left;
+}
+
+/* Footer */
+.footer {
+    font-size: .8em;
+    margin: 1em 0;
+    color: #333;
+}

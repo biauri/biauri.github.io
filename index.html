@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adivinhe o número</title>
+
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="../css-resets/reset.css">
+    
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Javascript principal -->
+    <script src="js/script.js" async></script>
+</head>
+<body>
+    <header>
+        <h1>Adivinhe o número!</h1>
+    </header>
+    
+    <main>
+        <!-- O jogo -->
+        <div class="game" id="game">
+            <h2>Qual é o número?</h2>
+            
+            <!-- Formulário -->
+            <div class="form">
+                <input type="text" id="guessField" placeholder="Insira o número aqui!" class="guessField">
+                <br>
+                <input type="submit" value="Manda ver!" class="guessSubmit">
+            </div>
+            
+            <!-- Resultado -->
+            <div class="resultParas">
+                <p class="guesses"></p>
+                <p class="lastResult"></p>
+                <p class="lowOrHi"></p>
+            </div>
+        </div>
+
+        <!-- Instruções -->
+        <div class="instructions">
+                <h2>Como jogar</h2>
+                
+                <ul class="instructions-list">
+                    <li class="instructions-item">
+                        <p class="instructions-para-left">Será gerado um número aleatório de 1 a 100</p>
+                        <img src="https://img.icons8.com/wired/100/000000/code.png" alt="Código de programação" class="img-right">
+                    </li>
+                    
+                    <li class="instructions-item">
+                        <p class="instructions-para-right">Você tem 10 chances para adivinhar qual é o número!</p>
+                        <img src="https://img.icons8.com/wired/100/000000/hearts.png" alt="10 vidas" class="img-left">
+                    </li>
+                    
+                    <li class="instructions-item">
+                        <p class="instructions-para-left">Insira o número e clique no botão <span>manda ver</span></p>
+                        <img src="https://img.icons8.com/wired/100/000000/form.png" alt="Formulário" class="img-right">
+                    </li>
+                    
+                    <li class="instructions-item">
+                        <p class="instructions-para-right" style="margin: 11.6px 0;">Nós diremos se o número que você inseriu foi muito alto ou muito baixo. Você também conseguirá consultar os números inseridos anteriormente</p>
+                        <img src="https://img.icons8.com/wired/100/000000/checkmark.png" alt="Checar o resultado" class="img-left">
+                    </li>
+                </ul>
+            </div>
+    </main>
+    
+    <footer>
+        <p class="footer">Feito com <i class="material-icons" style="font-size: .8em; color: red;">favorite</i> por Beatriz Urioste</p>
+        <p class="footer"><a href="https://icons8.com/icon">Images by Icons8</a> | <a href="https://developer.mozilla.org/pt-BR">Javascript tutorial by MDN web docs</a></p>
+    </footer>
+</body>
+</html>
